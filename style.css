@@ -14,13 +14,15 @@ html, body {
      display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(14, 15, 15, 0.932);
 }
 .box{
     height: 500px;
     width: 550px;
-    background-color: black;
+    border: 15px solid white;
    position: relative;
    overflow: hidden;
+  
 }
 .img1,.img2,.img3,.img4,.img5{
     position: absolute;
