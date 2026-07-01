@@ -7,17 +7,16 @@ let img5=document.querySelector(".img5");
 let arr=[img1,img2,img3,img4,img5];
 let index=0;
 
-arr.forEach(idx => {
+
+setInterval(() => {
+    
+    arr.forEach(idx => {
     idx.style.visibility="hidden";
 });
-const interval=setInterval(() => {
-    
-    arr[index].style.visibility="visible";
-    index++;
 
-    if(index>arr.length){
-        clearInterval(interval);
-    }
+    arr[index].style.visibility="visible";
+    index=(index+1)%arr.length;
+
 
 }, 1000);
 
